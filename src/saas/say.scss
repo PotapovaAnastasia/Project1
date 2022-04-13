@@ -2,15 +2,13 @@
 
 .say {
   padding-bottom: 100px;
-}
-
-.say__top {
-  max-width: 543px;
-}
-
-.say__group__info {
-  padding: 0 90px;
-  @include flex-align-between;
+  &__top {
+    max-width: 543px;
+  }
+  &__group__info {
+    padding: 0 90px;
+    @include flex-align-between;
+  }
 }
 
 .say__group__info__block {
@@ -64,17 +62,17 @@
 
 .say__group {
   position: relative;
+  &__reviews__btn {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 0;
+    color: transparent;
+  }
 }
 
-.say__group__reviews__btn {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  z-index: 1;
-  border-radius: 50%;
-  font-size: 0;
-  color: transparent;
-}
 .arrow2 {
   width: 45px;
   height: 45px;
@@ -165,10 +163,10 @@
 @media (max-width: 513px) {
   .say__group__info {
     justify-content: center;
-  }
-  .say__group__info__block {
-    flex: 0 1 95%;
-    padding: 30px 24px 38px 15px;
+    &__block {
+      flex: 0 1 95%;
+      padding: 30px 24px 38px 15px;
+    }
   }
   .none5 {
     display: none;
@@ -242,10 +240,9 @@
 
 .subscribe__form__button {
   margin-right: 8px;
-}
-
-.subscribe__form__button:focus {
-  background: $darkblue;
+  &:focus {
+    background: $darkblue;
+  }
 }
 
 @media (max-width: 500px) {

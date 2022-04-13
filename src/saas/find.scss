@@ -131,12 +131,11 @@
 .find {
   padding-top: 110px;
   padding-bottom: 80px;
-}
-
-.find__row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .find__info {
@@ -207,61 +206,61 @@
   .find {
     padding-top: 90px;
     padding-bottom: 50px;
-  }
-  .find__info__button__item {
-    padding: 10px 25px;
-  }
-  .find__info__title {
-    font-size: 38px;
-    line-height: 42px;
-    margin-bottom: 22px;
-    padding-right: 15px;
-  }
-  .find__info__subtitle {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 16px;
-    padding-right: 30px;
-  }
-  .find__info__text {
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 24px;
-    padding-right: 30px;
-  }
-  .find__video {
-    margin-top: 10px;
+    &__info__button__item {
+      padding: 10px 25px;
+    }
+    &__info__title {
+      font-size: 38px;
+      line-height: 42px;
+      margin-bottom: 22px;
+      padding-right: 15px;
+    }
+    &__info__subtitle {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 16px;
+      padding-right: 30px;
+    }
+    &__info__text {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 24px;
+      padding-right: 30px;
+    }
+    &__video {
+      margin-top: 10px;
+    }
   }
 }
 
 @media (max-width: 719px) {
-  .find__info {
-    flex: 0 1 100%;
-    text-align: center;
-  }
   .find {
     padding: 65px 25px 70px;
     max-width: 550px;
     margin: 0 auto;
   }
-  .find__info__title {
-    font-size: 24px;
-    line-height: 30px;
-    padding-right: 0;
-  }
-  .find__info__subtitle {
-    font-size: 14px;
-    line-height: 18px;
-    padding-right: 0;
-  }
-  .find__info__text {
-    font-size: 15px;
-    line-height: 18px;
-    padding-right: 0;
-  }
-  .find__info__button__item {
-    padding: 4px 16px;
-    font-size: 13px;
+  .find__info {
+    flex: 0 1 100%;
+    text-align: center;
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+      padding-right: 0;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      padding-right: 0;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 18px;
+      padding-right: 0;
+    }
+    &__button__item {
+      padding: 4px 16px;
+      font-size: 13px;
+    }
   }
   .find__video {
     margin-top: 40px;
@@ -274,10 +273,10 @@
   .find {
     padding: 60px 0 70px;
     max-width: 400px;
-  }
-  .find__info__title {
-    font-size: 20px;
-    line-height: 22px;
+    &__info__title {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 }
 

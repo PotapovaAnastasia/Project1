@@ -1,0 +1,33 @@
+/*-------Variables------*/
+
+$primary-black: #222222;
+$light-black: #555555;
+$middle-black: #333333;
+$subtitle-black: #444444;
+
+$primary-white: #ffffff;
+$title-white: #FCFCFC;
+$subtitle-white: #F9F9F9;
+
+$primary-blue: #086CF9;
+$darkblue: #0047ab;
+
+$grey-background: #ECF4FF;
+$violet-background: #D3E5FE;
+
+$border-bottom: #E9E8E8;
+$border-blog: #BFBFBF;
+$border-arrow: #D5D4D4;
+$border-loader: #8b00ff;
+
+/*-------/Variables------*/
+
+/*-------Mixin------*/
+
+@mixin flex-align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*-------/Mixin------*/

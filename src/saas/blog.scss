@@ -1,0 +1,158 @@
+@import "variables.scss";
+
+.blog {
+  padding-bottom: 100px;
+  padding-top: 80px;
+}
+
+.blog__info {
+  @include flex-align-between;
+  margin-bottom: 40px;
+}
+
+.blog__info__block {
+  border: 0.5px solid $border-blog;
+  border-radius: 4px;
+  flex: 0 1 30%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    margin-top: -15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.blog__info__block:last-child {
+  margin-right: 0;
+}
+
+.blog__info__image {
+  height: 248px;
+  overflow: hidden;
+}
+
+.blog__info__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.blog__info__item {
+  padding: 24px 29px 32px;
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    color: $primary-black;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $subtitle-black;
+    margin-bottom: 16px;
+  }
+  &__more a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-blue;
+    transition: color .1s linear;
+  }
+}
+
+.blog__info__item__more a:hover {
+  color: $darkblue;
+}
+
+.blog__button {
+  text-align: center;
+  &__item {
+    padding: 16px 40px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1000px) {
+  .blog__info__block {
+    flex: 1 1 31%;
+    margin-right: 20px;
+  }
+  .blog__info__item {
+    padding: 20px 20px 20px;
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 14px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 14px;
+    }
+  }
+  .blog {
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+  .blog__button__item {
+    padding: 10px 34px;
+  }
+}
+
+@media (max-width: 818px) {
+  .blog__info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog__info__block {
+    flex: 0 1 46%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .blog__info__item {
+    padding: 20px 26px 22px;
+  }
+  .blog {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 570px) {
+  .none2 {
+    display: none;
+  }
+  .blog__info__block {
+    flex: 0 1 80%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .blog {
+    padding-bottom: 40px;
+  }
+  .blog__info__block {
+    flex: 0 1 90%;
+  }
+  .blog__info__item {
+    padding: 18px 22px 19px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+/*-------Variables------*/
+/*-------/Variables------*/
+/*-------Mixin------*/
+/*-------/Mixin------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  z-index: 3;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader .loader {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 4px solid transparent;
+  border-top-color: #8b00ff;
+  top: 50%;
+  left: 50%;
+  margin: -30px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+.preloader .loader:before, .preloader .loader:after {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+.preloader .loader:before {
+  border-top-color: #086CF9;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  animation: spin 3s linear infinite;
+}
+.preloader .loader:after {
+  border-top-color: #ffffff;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  animation: spin 4s linear infinite;
+}
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=loader.css.map */

@@ -1,0 +1,164 @@
+@import "variables.scss";
+
+.howwork {
+  padding-bottom: 100px;
+}
+/*---------Top----------*/
+.top {
+  text-align: center;
+  max-width: 423px;
+  margin: 0 auto 53px;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: $primary-black;
+    margin-bottom: 12px;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $light-black;
+  }
+}
+
+@media (max-width: 950px) {
+  .top__title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .howwork {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 719px) {
+  .top__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 570px) {
+  .top {
+    margin: 0 auto 30px;
+    max-width: 280px;
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+/*---------/Top----------*/
+
+/*---------Info----------*/
+
+.howwork__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.howwork__info__block {
+  flex: 0 1 25%;
+  padding: 0 20px;
+  text-align: center;
+  &:hover {
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+  }
+  &__icon {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: $primary-black;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $light-black;
+  }
+}
+
+.howwork__info__block__icon img {
+  max-width: 100%;
+}
+
+@media (max-width: 1087px) {
+  .howwork__info__block__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 930px) {
+  .howwork__info__block__title {
+    font-size: 22px;
+  }
+  .howwork__info {
+    margin: 0;
+  }
+  .howwork__info__block {
+    flex: 0 1 50%;
+    padding: 0 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .howwork__info__block__title {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .howwork__info__block {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 481px) {
+  .howwork__info__block {
+    flex: 0 1 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    &__icon {
+      margin-bottom: 15px;
+    }
+  }
+  .howwork__info__block__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .howwork {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
